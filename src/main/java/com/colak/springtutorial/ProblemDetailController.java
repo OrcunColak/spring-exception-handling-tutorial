@@ -1,4 +1,4 @@
-package com.colak.springexceptionhandlingtutorial;
+package com.colak.springtutorial;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +13,7 @@ public class ProblemDetailController {
     // http://localhost:8080/api/problemdetail/getResponseStatusException
     @GetMapping(path = "getResponseStatusException")
     String getResponseStatusException() {
-        // Shows problem details response
+        // Does not Show problem details response
         throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Noooooo!");
     }
 

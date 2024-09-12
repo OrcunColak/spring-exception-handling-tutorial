@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.colak.spring-exception-handling-tutorial' is invalid and this project uses 'com.colak.springexceptionhandlingtutorial' instead.
+* The original package name 'com.colak.spring-exception-handling-tutorial' is invalid and this project uses 'com.colak.springtutorial' instead.
 
 # Getting Started
 

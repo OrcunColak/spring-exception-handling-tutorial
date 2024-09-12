@@ -1,4 +1,4 @@
-package com.colak.springexceptionhandlingtutorial;
+package com.colak.springtutorial;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
@@ -14,6 +14,7 @@ public class GlobalExceptionHandler {
     public ProblemDetail handleException(Exception exception) {
         ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(HttpStatus.INTERNAL_SERVER_ERROR,exception.getMessage());
         problemDetail.setTitle("Internal Server Error");
+
         problemDetail.setProperty("errorCategory", "Generic");
         problemDetail.setProperty("timestamp", Instant.now());
 
